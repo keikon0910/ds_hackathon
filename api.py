@@ -1,7 +1,9 @@
+# 必要なのは自分でインストールしてね
 import requests
 import os
 from dotenv import load_dotenv
 
+# apikeyは自分で入れる
 load_dotenv()
 API_KEY = os.getenv("API_KEY")
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
@@ -11,6 +13,7 @@ headers = {
     "Content-Type": "application/json"
 }
 
+# 適当にllmに聞きたいこと入れてね
 prompt = "今日の献立考えて"
 
 payload = {
