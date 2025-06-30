@@ -14,7 +14,15 @@ headers = {
 }
 
 # 適当にllmに聞きたいこと入れてね
-prompt = "今日の献立考えて"
+input = ""
+prompt = """
+料理名から必要な材料を推測して教えて欲しい。
+例：料理　カレー
+　　人数　2人
+　　材料　にんじん1本
+
+カレーに必要な材料は何
+"""
 
 payload = {
     "model": "meta-llama/llama-4-scout:free",
